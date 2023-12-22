@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>监控</title>
+</head>
+<body>
+    <img src="http://beijing.4gdl.com:2003/mjpeg/1" id="image">
+
+    <script>
+        const w = window.screen.width;
+        const h = window.screen.height;
+
+        var image=document.getElementById("image");
+        var x1=image.wieth/w,x2=image.height/h;
+        image.width*=min(x1,x2);
+        image.height*=min(x1,x2);
+    </script>
+</body>
+</html>
